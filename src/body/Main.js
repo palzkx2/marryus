@@ -80,7 +80,9 @@ const Main = () => {
                         <img src={jkart} alt='' width={200} height={300}/>
                     </div>
                     <div style={{width:200, height:300, backgroundColor: '#e2e2e2', marginLeft:'70px', cursor:'pointer'}} onClick={scrollTosDm}>
-                        <p style={{color:'#fff'}}>스드메입니다.</p>
+                        <span>
+                            <p style={{color:'#fff'}}>스드메입니다.</p>
+                        </span>
                     </div>
                     <div style={{width:200, height:300, backgroundColor: '#e2e2e2', marginLeft:'70px', cursor:'pointer'}} onClick={scrollTohSRef}>
                         <p style={{color:'#fff'}}>혼수</p>
