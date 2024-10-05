@@ -70,7 +70,9 @@ const Main = () => {
 
         if(windowScroll >= 200){
             document.querySelector('.topNav').classList.add('ModalOpen');
+            document.querySelector('.topNav').classList.remove('ModalClose');
         } else {
+            document.querySelector('.topNav').classList.add('ModalClose');
             document.querySelector('.topNav').classList.remove('ModalOpen');
         }
 
