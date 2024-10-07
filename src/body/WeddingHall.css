@@ -1,0 +1,149 @@
+/* 기능별 정렬 css */
+.functionByContainer{
+    display: flex;
+    flex-direction: row;  
+    margin: 0px 50px 0px 50px;
+}
+.functionBySection{
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    margin: 10px;
+    padding: 20px;
+
+    border-radius: 2%;
+    border: 1px solid;
+    border-color: gainsboro;
+
+    font-family: sans-serif, Arial, Helvetica, sans-serif, ;
+    font-size: 20px;
+    font-weight: bold;
+    color: #353535;
+    white-space: nowrap;
+    .sub{
+        white-space: nowrap;
+        font-size: 13px;
+        margin: 10px;
+        padding: 5px;
+        font-weight: normal;
+    }
+}
+.functionByIcon{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(215, 230, 233, 0.267);
+    color: rgb(231, 103, 178);
+}
+a{
+    text-decoration: none;
+    color: rgb(231, 103, 178);
+}
+/* 기능별 정렬 css end*/
+
+
+/* 왼쪽 카테고리 css */
+.header{
+    margin:20px;
+    padding-top: 20px;
+    border-color:  rgb(231, 103, 178);
+    border-top: 1px solid;
+    color:rgb(231, 103, 178);
+    border-width: 3px;
+    width: 218px;
+}
+.headerSubject{
+    margin: auto;
+    padding-left: 60px;
+    font-weight: bold;
+    color: rgb(231, 103, 178);
+    font-size: 22px;
+}
+.searchBox-container{
+    position: relative;
+    margin-bottom: 20px;
+}
+.searchBox{
+    border: 1px solid gainsboro;
+    width: 214px;
+    height: 28px;
+    padding: 1px;
+    font-size: 12px;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+.searchBoxIcon{
+    position: absolute;
+    top: 70%;
+    left: 194px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    white-space: nowrap;
+}
+.letCategory{
+    border: 1px solid;
+    border-color: gainsboro;
+    background-color: rgba(220, 220, 220, 0.199);
+    padding: 12px;
+    color: black;
+    display: flex;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.letCategory:hover{
+    background-color: white;
+    cursor: pointer;
+    
+}
+.gt{
+    flex-direction: row;
+    color: rgba(220, 220, 220, 0.473);
+    font-size: 12px;
+    margin: auto;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.gt:hover{
+    color: rgba(0, 0, 0, 0.911);
+}
+/* 왼쪽 카테고리 css */
+
+
+/* 전체상품 */
+.allProductHr{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: gainsboro;
+    border-width: 1px;
+    white-space: nowrap;
+}
+.allProduct{
+    margin: 10px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+.fixed-element {
+    position: fixed; /* 기본 고정 위치 */
+    transition: top 0.3s; /* 부드러운 전환 효과 */
+    left: 325px;
+    padding-top: 500px;
+}
+
+.fixed {
+    position: fixed;
+   
+    
+}
+
+.absolute {
+    position: absolute;
+}
