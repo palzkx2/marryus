@@ -72,6 +72,11 @@
     flex-shrink: 1;
 }
 
+.stk{
+    position: sticky;
+    top: 0px;
+}
+
 .bigCategory{
     margin-left: 150px;
 }

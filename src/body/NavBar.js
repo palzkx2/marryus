@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './navBar.css'
+import './main.css'
+import { BsSearchHeart } from "react-icons/bs";
+import { FaUserTie } from "react-icons/fa";
+import { TbShoppingCartHeart } from "react-icons/tb";
 
 const NavBar = () => {
 
@@ -30,7 +34,18 @@ const NavBar = () => {
         <div>
 
             <nav className="topNav">
-                
+                <h1>Marry Us</h1>
+                <input type='text' placeholder='검색 할 내용을 입력하세요'/>
+                <BsSearchHeart className='searchIcon'></BsSearchHeart>
+                <div>
+                    <p>전체메뉴</p>
+                    <p>웨딩홀</p>
+                    <p>스드메</p>
+                    <p>혼수컬렉션</p>
+                    <p>신혼여행지</p>
+                </div>
+                <FaUserTie className='icon'/>
+                <TbShoppingCartHeart className='icon' style={{marginLeft:'20px'}}/>
             </nav>
 
             <div style={{justifyContent:'center', alignContent:'center', display:'flex', margin:'30px 0'}}>

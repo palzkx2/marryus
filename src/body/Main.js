@@ -25,7 +25,7 @@ const Main = () => {
             sDmRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
+    
     const scrollTohSRef = () => {
         if (hSRef.current) {
             hSRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -165,7 +165,7 @@ const Main = () => {
 
                 {/* ================================================================================================================= */}
 
-                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={weddingHallRef}>
+                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={sDmRef}>
                     <div
                         style={
                             // windowDimensions.width >= 1600 ? {width:'100%'} : {width:'100%'}
@@ -177,7 +177,7 @@ const Main = () => {
                                 windowDimensions.width >= 1600 ? {textAlign:'left'} : {textAlign:'center'}
                                 // {textAlign:'left'}
                             }
-                        >웨딩홀</h1>
+                        >스튜디오</h1>
                     </div>
                 </div>
 
@@ -234,7 +234,7 @@ const Main = () => {
 
                 {/* ================================================================================================================= */}
 
-                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={weddingHallRef}>
+                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}}>
                     <div
                         style={
                             // windowDimensions.width >= 1600 ? {width:'100%'} : {width:'100%'}
@@ -246,7 +246,7 @@ const Main = () => {
                                 windowDimensions.width >= 1600 ? {textAlign:'left'} : {textAlign:'center'}
                                 // {textAlign:'left'}
                             }
-                        >웨딩홀</h1>
+                        >드레스</h1>
                     </div>
                 </div>
 
@@ -303,7 +303,7 @@ const Main = () => {
 
                 {/* ================================================================================================================= */}
 
-                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={weddingHallRef}>
+                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}}>
                     <div
                         style={
                             // windowDimensions.width >= 1600 ? {width:'100%'} : {width:'100%'}
@@ -315,7 +315,7 @@ const Main = () => {
                                 windowDimensions.width >= 1600 ? {textAlign:'left'} : {textAlign:'center'}
                                 // {textAlign:'left'}
                             }
-                        >웨딩홀</h1>
+                        >메이크업</h1>
                     </div>
                 </div>
 
@@ -372,7 +372,7 @@ const Main = () => {
 
                 {/* ================================================================================================================= */}
 
-                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={weddingHallRef}>
+                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={hSRef}>
                     <div
                         style={
                             // windowDimensions.width >= 1600 ? {width:'100%'} : {width:'100%'}
@@ -384,7 +384,7 @@ const Main = () => {
                                 windowDimensions.width >= 1600 ? {textAlign:'left'} : {textAlign:'center'}
                                 // {textAlign:'left'}
                             }
-                        >웨딩홀</h1>
+                        >혼수컬렉션</h1>
                     </div>
                 </div>
 
@@ -441,7 +441,7 @@ const Main = () => {
 
                 {/* ================================================================================================================= */}
 
-                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={weddingHallRef}>
+                <div style={{justifyContent:'center', alignContent:'center', display:'flex'}} ref={wTRef}>
                     <div
                         style={
                             // windowDimensions.width >= 1600 ? {width:'100%'} : {width:'100%'}
@@ -453,7 +453,7 @@ const Main = () => {
                                 windowDimensions.width >= 1600 ? {textAlign:'left'} : {textAlign:'center'}
                                 // {textAlign:'left'}
                             }
-                        >웨딩홀</h1>
+                        >신혼여행지</h1>
                     </div>
                 </div>
 

@@ -86,7 +86,7 @@ const SdmBoard = () => {
 
     return (
         <div>
-            <div>
+            <div className='stk'>
                 <div className='bigCategoryInput'>
                     메리어스
                     <input type='text' style={{ marginTop: '30px', height: '30px' }} />
