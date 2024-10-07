@@ -55,35 +55,8 @@ const Main = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const [windowScroll, setWindowScroll] = useState(0);
-
-    useEffect(() => {
-        function scrollView() {
-            setWindowScroll(window.scrollY)
-        }
-        
-        window.addEventListener('scroll', scrollView);
-        return () => window.removeEventListener('scroll', scrollView);
-    }, [])
-
-    useEffect(() => {
-
-        if(windowScroll >= 200){
-            document.querySelector('.topNav').classList.add('ModalOpen');
-            document.querySelector('.topNav').classList.remove('ModalClose');
-        } else {
-            document.querySelector('.topNav').classList.add('ModalClose');
-            document.querySelector('.topNav').classList.remove('ModalOpen');
-        }
-
-    }, [windowScroll])
-
     return (
         <div>
-
-            <nav className="topNav">
-                
-            </nav>
 
             {/* Header 영상 */}
             <div style={{ pointerEvents: 'none' }}>
