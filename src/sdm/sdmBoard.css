@@ -59,7 +59,7 @@
     border-top: 3px solid red;
     width: 286px;
     margin-left: 150px;
-    margin-top: 120px;
+    margin-top: 50px;
     text-align: center;
     padding: 10px 0;
     font-weight: bold;
@@ -74,7 +74,7 @@
 
 .stk{
     position: sticky;
-    top: 0px;
+    top: 130px;
 }
 
 .bigCategory{

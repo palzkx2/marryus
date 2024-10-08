@@ -6,8 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import jkart from '../s_images/JKArt.jpg'
+import product from './proData'
 
 const Main = () => {
+
+    const [hall] = useState(product)
 
     const weddingHallRef = useRef('')
     const sDmRef = useRef('')
@@ -59,15 +62,15 @@ const Main = () => {
         <div>
 
             {/* Header 영상 */}
-            <div style={{ pointerEvents: 'none' }}>
+            <div style={{ pointerEvents: 'none'}}>
             <video
                 width="100%" // 비디오의 너비
                 height="100%"
                 autoPlay // 자동 재생
                 loop // 반복 재생 (원하는 경우)
-                muted // 자동 재생 시 소리 끄기                
+                muted // 자동 재생 시 소리 끄기
             >
-                <source src={`${process.env.PUBLIC_URL}/p_videos/mBar.mp4`} type="video/mp4" />
+                <source src={`${process.env.PUBLIC_URL}/p_videos/mainBarVideo2.mp4`} type="video/mp4" />
                 죄송합니다. 브라우저가 비디오 태그를 지원하지 않습니다.
             </video>
             </div>
@@ -78,7 +81,7 @@ const Main = () => {
                         <img src={jkart} alt='' width={200} height={300}/>
                     </div>
                     <div style={{width:200, height:300, backgroundColor: '#e2e2e2', marginLeft:'70px', cursor:'pointer'}} onClick={scrollTosDm}>
-                        <p style={{color:'#fff'}}>스드메aaaaa</p>
+                        <p style={{color:'#fff'}}>스드메</p>
                     </div>
                     <div style={{width:200, height:300, backgroundColor: '#e2e2e2', marginLeft:'70px', cursor:'pointer'}} onClick={scrollTohSRef}>
                         <p style={{color:'#fff'}}>혼수</p>
@@ -137,15 +140,15 @@ const Main = () => {
                         initialSlide={0}
                     >
                         
-                        {[...Array(25)].map((item, index) => (
+                        {hall.slice(0,25).map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div className='swiper-slide' style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
                                     <div style={{textAlign: 'left'}}>
                                         <img src={jkart} alt='' style={{position:'relative'}}/>
                                         <div className='imgdiv'>
-                                            <strong style={{display: 'block', fontSize: '18pt'}}>XX예식장</strong>
-                                            <p>서울 강남</p>
-                                            <p style={{paddingBottom:'25px'}}>000,000,000원</p>
+                                            <strong style={{display: 'block', fontSize: '18pt'}}>{item.name}</strong>
+                                            <p>{item.addr}</p>
+                                            <p style={{paddingBottom:'25px'}}>{item.price}</p>
                                         </div>
                                     </div>
                                 </div>

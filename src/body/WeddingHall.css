@@ -115,8 +115,12 @@ details {
 .letCategory:hover{
     background-color: white;
     cursor: pointer;
-    
 }
+
+.letCategory:hover .gt{
+    color: rgba(0, 0, 0, 0.911);
+}
+
 .gt{
     flex-direction: row;
     color: rgba(220, 220, 220, 0.473);
@@ -124,9 +128,6 @@ details {
     margin: auto;
     font-weight: bold;
     white-space: nowrap;
-}
-.gt:hover{
-    color: rgba(0, 0, 0, 0.911);
 }
 /* 왼쪽 카테고리 css */
 

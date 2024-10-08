@@ -9,9 +9,6 @@ import WeddingHallItem from './WeddingHallItem';
 import { TiArrowDownOutline, TiArrowUpOutline } from 'react-icons/ti';
 import { RxDoubleArrowDown, RxDoubleArrowUp } from 'react-icons/rx';
 
-
-
-
 const WeddingHall = () => {
 
     const regions = {
@@ -260,7 +257,6 @@ const WeddingHall = () => {
       };
 
     const [data,setData] = useState(proData)
-
     //토글 디테입
     const [isOpen, setIsOpen] = useState(false); // 열림 상태 관리
 
@@ -308,7 +304,7 @@ const WeddingHall = () => {
                     </div>
                     <div className='letCategory' style={{borderTop:'3px solid  rgb(231, 103, 178)'}}>
                         전체보기
-                        <div className='gt' style={{paddingLeft:'137px'}}>&gt;</div>
+                        <div className='gt' style={{marginLeft:'137px'}}>&gt;</div>
                     </div>
                     <div  className='letCategory'>
                         웨딩홀
@@ -332,120 +328,43 @@ const WeddingHall = () => {
                     </div>
                     {/* 웨딩홀 end*/}
 
-                  {/* 지역검색 */}
-                  <div className='LocationSearchSticky'>
-                        <div className='headerSubject' style={{marginBottom:'10px'}}>지역 검색</div>
-
-                        <details open={isOpenRegion}>
-                            <summary className='letCategory' onClick={toggleRegion}>
-                                지역검색
-                                <p style={{marginRight:'125px'}}></p>
-                                {isOpenRegion ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-
-                            <select className='letCategory scoption' onChange={handleRegionChange} style={{borderTop:'none'}}>
-                                <option>-- 시/도를 선택해주세요 --</option>
-                                {Object.keys(regions).map(region => (
-                                    <option key={region} value={region}>{region}</option>
-                                ))}
-                            </select>
-                            
-                            {/* 선택된 지역에 따른 세부 행정구역 선택 */}
-                            {selectedRegion !== '-- 시/도를 선택해주세요 --' && (
-                                <select className='letCategory scoption' style={{borderTop:'none'}}>
-                                    <option>-- 세부 행정구역을 선택해주세요 --</option>
-                                    {subRegions.map(subRegion => (
-                                        <option key={subRegion} value={subRegion}>{subRegion}</option>
-                                    ))}
-                                </select>
-                            )}
-                        </details>
-
-                        {/* 가격대별 검색 */}
-                        <details open={isOpenPrice}>
-                            <summary className='letCategory' onClick={togglePrice}>
-                                가격대별 검색
-                                <p style={{ marginRight: '100px' }}></p>
-                                {isOpenPrice ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-                            <select className='letCategory scoption' style={{ borderTop: 'none' }}>
-                                <option>-- 가격대 선택 --</option>
-                                <option value="1">1,000,000원 이하</option>
-                                <option value="2">1,000,000원 ~ 2,000,000원</option>
-                                <option value="3">2,000,000원 ~ 3,000,000원</option>
-                                <option value="4">3,000,000원 ~ 4,000,000원</option>
-                                <option value="5">4,000,000원 이상</option>
-                            </select>
-                        </details>
-
-                        {/* 식사종류별 검색 */}
-                        <details open={isOpenMeal}>
-                            <summary className='letCategory' onClick={toggleMeal}>
-                                식사종류별 검색
-                                <p style={{marginRight:'87px'}}></p>
-                                {isOpenMeal ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-                            <select className='letCategory scoption' style={{ borderTop: 'none' }}>
-                                <option>-- 식사 종류 선택 --</option>
-                                <option value="1">한식</option>
-                                <option value="2">중식</option>
-                                <option value="3">양식</option>
-                                <option value="4">뷔페</option>
-                            </select>              
-                        </details>
-
-                        {/* 식대별 검색 */}
-                        <details open={isOpenCost}>
-                            <summary className='letCategory' onClick={toggleCost}>
-                                식대별 검색
-                                <p style={{marginRight:'112px'}}></p>
-                                {isOpenCost ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-                            <select className='letCategory scoption' style={{ borderTop: 'none' }}>
-                                <option>-- 식대 선택 --</option>
-                                <option value="1">50,000원 미만</option>
-                                <option value="2">50,000원 ~ 70,000원</option>
-                                <option value="3">70,000원 ~ 80,000원</option>
-                                <option value="4">80,000원 ~ 90,000원</option>
-                                <option value="5">100,000원 이상</option>
-                            </select>           
-                        </details>
-
-                        {/* 예식 종류별 검색 */}
-                        <details open={isOpenCeremony}>
-                            <summary className='letCategory' onClick={toggleCeremony}>
-                                예식 종류별 검색
-                                <p style={{marginRight:'83px'}}></p>
-                                {isOpenCeremony ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-                            <select className='letCategory scoption' style={{ borderTop: 'none' }}>
-                                <option>-- 예식 종류 선택 --</option>
-                                <option value="1">전통혼례</option>
-                                <option value="2">웨딩홀 예식</option>
-                                <option value="3">야외 예식</option>
-                                <option value="4">스몰 웨딩</option>
-                            </select>               
-                        </details>
-
-                        {/* 보증인원별 검색 */}
-                        <details open={isOpenGuarantee}>
-                            <summary className='letCategory' onClick={toggleGuarantee}>
-                                보증인원별 검색
-                                <p style={{marginRight:'86px'}}></p>
-                                {isOpenGuarantee ? <RxDoubleArrowDown className='arrowIcon' /> : <RxDoubleArrowUp className='arrowIcon' />}
-                            </summary>
-                            <select className='letCategory scoption' style={{ borderTop: 'none' }}>
-                                <option>-- 보증 인원 선택 --</option>
-                                <option value="1">50명 미만</option>
-                                <option value="2">50명 ~ 100명</option>
-                                <option value="3">100명 ~ 150명</option>
-                                <option value="4">150명 ~ 200명</option>
-                                <option value="4">200명 ~ 300명</option>
-                                <option value="5">400명 이상</option>
-                            </select>              
-                        </details>
-                        
-                        
+                    {/* 지역검색 */}
+                    <div style={{marginTop:'20px',position:'sticky',top:'130px'}}>
+                    <div style={{position:'sticky',top:'0px'}}>
+                        <div className='headerSubject'>지역검색</div>
+                        <div className='searchBox-container'>
+                            <input className='searchBox' type='text' placeholder='웨딩홀 및 태그를 검색해 보세요'/>
+                            <div className='searchBoxIcon'>
+                                <a href='#'>
+                                    <BsSearchHeart />
+                                </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div className='letCategory' style={{borderTop:'3px solid  rgb(231, 103, 178)'}}>
+                        전체보기
+                        <div className='gt' style={{paddingLeft:'137px'}}>&gt;</div>
+                    </div>
+                    <div  className='letCategory'>
+                        웨딩홀
+                        <div className='gt' style={{paddingLeft:'149px'}}>&gt;</div>
+                    </div>
+                    <div  className='letCategory'>
+                        호텔
+                        <div className='gt' style={{paddingLeft:'161px'}}>&gt;</div>
+                    </div>
+                    <div  className='letCategory'>
+                        하우스
+                        <div className='gt' style={{paddingLeft:'149px'}}>&gt;</div>
+                    </div>
+                    <div  className='letCategory'>
+                        스몰(100명 이하)
+                        <div className='gt' style={{paddingLeft:'93px'}}>&gt;</div>
+                    </div>
+                    <div  className='letCategory'>
+                        야외 웨딩홀
+                        <div className='gt' style={{paddingLeft:'121px'}}>&gt;</div>
+                    </div>
                     </div>
                     {/* 지역검색 end */}
                     

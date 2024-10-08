@@ -4,10 +4,12 @@ import './main.css'
 import { BsSearchHeart } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { TbShoppingCartHeart } from "react-icons/tb";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const NavBar = () => {
 
     const [windowScroll, setWindowScroll] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         function scrollView() {
@@ -34,15 +36,35 @@ const NavBar = () => {
         <div>
 
             <nav className="topNav">
-                <h1>Marry Us</h1>
+                <Link to='/'><h1 style={{color:'white'}}>Marry Us</h1></Link>
                 <input type='text' placeholder='검색 할 내용을 입력하세요'/>
-                <BsSearchHeart className='searchIcon'></BsSearchHeart>
-                <div>
-                    <p>전체메뉴</p>
-                    <p>웨딩홀</p>
-                    <p>스드메</p>
-                    <p>혼수컬렉션</p>
-                    <p>신혼여행지</p>
+                <BsSearchHeart className='searchIcon' style={{ transform: isHovered ? 'translateX(-10px)' : 'translateX(0px)', transition: 'all 0.6s ease' }}/>
+                <div>   
+                    <Link to='/'>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                            전체메뉴
+                        </p>
+                    </Link>
+                    <Link to='/weddingHall'>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                            웨딩홀
+                        </p>
+                    </Link>
+                    <Link to='/sdm'>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                            스드메
+                        </p>
+                    </Link>
+                    <Link to='/'>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                            혼수컬렉션
+                        </p>
+                    </Link>
+                    <Link to='/'>
+                        <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                            신혼여행지
+                        </p>
+                    </Link>
                 </div>
                 <FaUserTie className='icon'/>
                 <TbShoppingCartHeart className='icon' style={{marginLeft:'20px'}}/>
@@ -50,21 +72,21 @@ const NavBar = () => {
 
             <div style={{justifyContent:'center', alignContent:'center', display:'flex', margin:'30px 0'}}>
                 <div className='login' style={{display:'flex', flexDirection:'row'}}>
-                    <p>로그인</p>
-                    <p style={{paddingLeft:'50px'}}>회원가입</p>
-                    <p style={{paddingLeft:'50px'}}>마이페이지</p>
-                    <strong style={{margin:'0 300px', fontSize:'36pt'}}>Marry Us</strong>
+                    <Link to='/login'><p>로그인</p></Link>
+                    <Link to='/signup'><p style={{marginLeft:'50px'}}>회원가입</p></Link>
+                    <p style={{marginLeft:'50px'}}>마이페이지</p>
+                    <Link to='/'><strong style={{margin:'0 300px', fontSize:'36pt', color:'black'}}>Marry Us</strong></Link>
                     <input type='text' placeholder='검색 할 내용을 입력하세요.' style={{height:'20px', margin:'16px 0', width:'292px', fontSize:'10pt'}}/>
                 </div>
             </div>
             <hr style={{width:'100%'}}/>
             <div style={{justifyContent:'center', alignContent:'center', display:'flex', marginTop:'10px'}}>
                 <div className='category' style={{display:'flex', flexDirection:'row'}}>
-                    <p>전체메뉴</p>
-                    <p>웨딩홀</p>
-                    <p>스드메</p>
-                    <p>혼수컬렉션</p>
-                    <p>신혼여행지</p>
+                    <Link to='/'><p>전체메뉴</p></Link>
+                    <Link to='/weddingHall'><p>웨딩홀</p></Link>
+                    <Link to='/sdm'><p>스드메</p></Link>
+                    <Link to='/'><p>혼수컬렉션</p></Link>
+                    <Link to='/'><p>신혼여행지</p></Link>
                 </div>
                 <div style={{margin:'0 440px'}}></div>
                 <div style={{display:'flex', flexDirection:'row'}}>

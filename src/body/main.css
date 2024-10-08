@@ -68,11 +68,11 @@ body {
 }
 
 .ModalOpen {
-  animation: openNav .7s ease-out forwards;
+  animation: openNav .4s ease-out forwards;
 }
 
 .ModalClose {
-  animation: closeNav .7s ease-out forwards;
+  animation: closeNav .4s ease-out forwards;
 }
 
 @keyframes openNav {

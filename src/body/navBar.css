@@ -1,10 +1,28 @@
 .category p {
-    padding-left: 20px;
+    margin-left: 20px;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+.category p:hover{
+    color: hotpink;
+    background: beige;
+    padding: 0 20px;
+    font-weight: bold;
 }
 
 .login p {
     font-size:12pt;
     margin:16px 0;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+.login p:hover {
+    color: red;
+    font-weight: bold;
+    background: beige;
+    padding: 0px 15px;
 }
 
 .topNav {
@@ -21,22 +39,25 @@
 .topNav input {
     height: 20px;
     margin: 24px 0 0 25px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    border: none;
     background: none;
     border-bottom: 1px solid white;
     width: 190px;
     position: relative;
 }
 
-.topNav .searchIcon{
+.searchIcon{
     width: 18px;
     height: 18px;
     position: absolute;
     top: 22px;
     left: 628px;
     cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.searchIcon:hover{
+    color: hotpink;
 }
 
 .topNav div{
@@ -51,10 +72,26 @@
     cursor: pointer;
 }
 
-.topNav .icon{
+.icon{
     width: 28px;
     height: 28px;
     margin: 22px 0;
     cursor: pointer;
     margin-left: 150px;
+    transition: all 0.6s ease;
+}
+
+.icon:hover{
+    color: hotpink;
+}
+
+nav div p {
+    color: white;
+    transition: all 0.6s ease;
+}
+
+nav div p:hover {
+    color: red;
+    border-bottom: 2px solid red;
+    padding: 0px 10px;
 }

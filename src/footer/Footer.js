@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div>
-                <p style={{color:'#fff', fontWeight:'bold', fontSize:'32px', marginTop:'36px'}}>Sinbuya</p>
-                <p style={{color:'#fff', fontSize:'9pt'}}>신부야</p>
-                <p style={{color:'gray', fontSize:'9pt', marginTop:'16px'}}>(주)케이앤엠코퍼레이션</p>
-                <p style={{color:'gray', fontSize:'9pt',}}>대표이사 XXX</p>
-                <p style={{color:'gray', fontSize:'9pt',}}>COPYRIGHT 2018 SINBUYA ALL RIGHTS RESERVED.</p>
+                <p style={{color:'#fff', fontWeight:'bold', fontSize:'32px', marginTop:'36px'}}>MarryUs</p>
+                <p style={{color:'#fff', fontSize:'9pt'}}>메리어스</p>
+                <p style={{color:'gray', fontSize:'9pt', marginTop:'16px'}}>(주)메리어스코리아</p>
+                <p style={{color:'gray', fontSize:'9pt',}}>팀원 정준우,황대웅,임경륜,이윤용</p>
+                <p style={{color:'gray', fontSize:'9pt',}}>COPYRIGHT 2024 MARRYUS ALL RIGHTS RESERVED.</p>
             </div>
 
             <div style={{paddingLeft:'20px', paddingTop:'30px', marginLeft:'80px'}}>
@@ -23,8 +23,8 @@ const Footer = () => {
                     <img src={instagram} alt='instargram' width={22} height={22} style={{paddingLeft:'15px'}}></img>
                 </p>
                 <p style={{paddingTop:'15px', color:'white', fontSize:'9pt'}}>Infomation</p>
-                <p style={{color:'gray', fontSize:'9pt', marginTop:'16px'}}>사업자등록번호 789 88 00488</p>
-                <p style={{color:'gray', fontSize:'9pt'}}>통신판매업신고 제2017-서울강남-03227호</p>
+                <p style={{color:'gray', fontSize:'9pt', marginTop:'16px'}}>사업자등록번호 123 45 78910</p>
+                <p style={{color:'gray', fontSize:'9pt'}}>통신판매업신고 제2024-서울강남-00000호</p>
                 <p style={{color:'gray', fontSize:'9pt'}}>개인정보관리책임자 <strong>XXX</strong></p>
             </div>
 
@@ -37,8 +37,8 @@ const Footer = () => {
                 </div>
                 <p style={{paddingTop:'15px', color:'white', fontSize:'9pt'}}>Contact Us</p>
                 <p style={{color:'gray', fontSize:'9pt', marginTop:'16px'}}>오전 10:00 - 오후 07:00 (화요일-토요일)</p>
-                <p style={{color:'gray', fontSize:'9pt'}}><strong>T</strong> 02 3444 6061&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<strong>F</strong> 02 3444 6062</p>
-                <p style={{color:'gray', fontSize:'9pt'}}>서울특별시 강남구 논현동 102-24 금농빌딩 2층 신부야</p>
+                <p style={{color:'gray', fontSize:'9pt'}}><strong>T</strong> 02 0000 0000&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<strong>F</strong> 02 1111 1111</p>
+                <p style={{color:'gray', fontSize:'9pt'}}>서울특별시 강남구 테헤란로 124 4층 메리어스</p>
             </div>
         </div>
     );
