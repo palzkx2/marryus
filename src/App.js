@@ -8,6 +8,7 @@ import Coma from "./weddingItem/Coma";
 import Login from "./login/Login";
 import SignUp from "./login/SignUp";
 import Join from "./login/Join";
+import Travel from "./travel/Travel";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path={['/login']}><Login/></Route>
         <Route path={['/signup']}><SignUp/></Route>
         <Route path={['/join']}><Join/></Route>
+        <Route path={['/travel']}><Travel/></Route>
       </Switch>
       <Footer/>
     </div>
