@@ -24,7 +24,7 @@ import SdmArticle from "./sdmArticle/SdmArticle";
 
 function App() {
   return (
-    <div>
+    <div>      
       <NavBar/>
       <Switch>
         <Route path={['/','/main']} exact><Main/></Route>
@@ -47,7 +47,7 @@ function App() {
         <Route path={['/myCart']}><MyCart/></Route>
         <Route path={['/updateUser']}><UpdateUser/></Route>
       </Switch>
-      <SdmArticle/>
+      {/* <SdmArticle/> */}
       <Footer/>
     </div>
   );

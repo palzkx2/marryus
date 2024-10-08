@@ -63,16 +63,16 @@ const Main = () => {
 
             {/* Header 영상 */}
             <div style={{ pointerEvents: 'none'}}>
-            <video
-                width="100%" // 비디오의 너비
-                height="100%"
-                autoPlay // 자동 재생
-                loop // 반복 재생 (원하는 경우)
-                muted // 자동 재생 시 소리 끄기
-            >
-                <source src={`${process.env.PUBLIC_URL}/p_videos/mainBarVideo2.mp4`} type="video/mp4" />
-                죄송합니다. 브라우저가 비디오 태그를 지원하지 않습니다.
-            </video>
+                <video
+                    width="100%" // 비디오의 너비
+                    height="100%"
+                    autoPlay // 자동 재생
+                    loop // 반복 재생 (원하는 경우)
+                    muted // 자동 재생 시 소리 끄기
+                >
+                    <source src={`${process.env.PUBLIC_URL}/p_videos/mainBarVideo2.mp4`} type="video/mp4" />
+                    죄송합니다. 브라우저가 비디오 태그를 지원하지 않습니다.
+                </video>
             </div>
 
             <div style={{display: 'flex', justifyContent:'center', alignContent:'center', margin:'50px 0px', height:'450px'}}>
