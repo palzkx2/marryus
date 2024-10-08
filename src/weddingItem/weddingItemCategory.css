@@ -1,135 +1,12 @@
-#header .header_inner {
-    background-color: #fff;
-}
-
-#header {
-    background: #fff;
-    border-bottom: 1px solid #cdcdcd;
-}
-
-#header .header_inner .search . input {
-    background: #fff;
-    border: 1px solid #929292;
-}
-
-#header .header_inner {
-    width: 1220px;
-    height: 104px;
-}
-
 #wrap {
     padding-top: 105px;
 }
-#header .header_inner .main_logo {
-    position: absolute;
-    top : 30px !important;
-    left: 50%;
-    margin-left: -160px;
-}
-/* ------------------------------------------------------------ */
-.menu_div {
-    width: 1220px;
-    height: 170px;
-    margin: 0 auto;
+
+.con_inner {
+    padding: 50px 60px 0px 60px;
     position: relative;
+    overflow: hidden;
 }
-
-.menu_div>a>div{
-    float: left;
-    font-size: 16px;
-    line-height: 56px;
-    color: #3e3e3e;
-    padding-left: 15px;
-    font-weight: bold;
-    padding-right: 15px;
-}
-
-.menu_div>div{
-    float: left;
-    font-size: 16px;
-    line-height: 56px;
-    color: #3e3e3e;
-    padding-left: 15px;
-    font-weight: bold;
-    padding-right: 15px;
-}
-
-.menu-trigger {
-    margin-right: 10px;
-}
-
-.menu-trigger,
-.menu-trigger span {
-    display: inline-block;
-    transition: all .4s;
-    box-sizing: border-box;
-}
-
-.menu-trigger {
-    position: relative;
-    width: 30px;
-    height: 22px;
-}
-
-.menu-trigger span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #3e3e3e;
-    border-radius: 4px;
-}
-
-.menu-trigger span:ntn-of-type(1) {
-    top: 0;
-}
-
-.menu-trigger span:ntn-of-type(2) {
-    top: 10px;
-}
-
-.menu-trigger span:ntn-of-type(3) {
-    bottom: 0;
-}
-
-.menu-trigger.active-3 {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.menu-trigger.active-3 span:ntn-of-type(1) {
-    -webkit-transform: translateY(20px) rotate(-45deg);
-    transform: translateY(20px) rotate(-45deg);
-}
-
-.menu-trigger.active-3 span:ntn-of-type(2) {
-    -webkit-transform: translateY(0) rotate(45deg);
-    transform: translateY(0) rotate(45deg);
-}
-
-.menu-trigger.active-3 span:ntn-of-type(3) {
-    opacity: 0;
-}
-
-.title_div {
-    background: #424242;
-    color: #fff;
-    text-align: center;
-    width: 82%;
-    height: 35px;
-    border-radius: 20px;
-    line-height: 35px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-.sub_tit_div {
-    padding: 10px;
-    font-size: 13px;
-    padding-top: 0px;
-    padding-left: 20px;
-}
-/* ------------------------------------------------------------ */
 
 .sub_visual {
     width: 100%;
@@ -146,46 +23,23 @@
     z-index: 1;
 }
 
-.review_list li {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 5px;
-    width: 40%;
-    border: 1px solid #eeeeee;
-    float: left;
-    margin-top: 0px;
-    margin-left: 5%;
-    margin-bottom: 20px;
-}
-
-.review_list li .img {
-    width: 60px;
-    height: 40px;
-    /* background: url(/img) 0 0 no-repeat; */
-    border-right: 0px solid #eeeeee;
-    float: left;
-}
-
-.review_list li .img img {
-    width: 60px;
-    height: 40px;
-}
-
 .left_con {
-    width: 100%;
+    width: 110%;
     float: left;
 }
 
 .studio_list {
     width: 100%;
     overflow: hidden;
+    list-style: none;
 }
 
 .studio_list li {
     width: 526px;
     border: 1px solid #ececec;
     float: left;
-    margin-right: 22px;
+    margin-right: 32px;
+    margin-left: 32px;
     margin-bottom: 30px;
 }
 
@@ -194,120 +48,74 @@
     height: 228px;
     background: #fff;
     border-bottom: 1px solid #ececec;
-    /* background: url(/img) 0 0 no-repeat; */
     text-align: center;
 }
 
-.studio_list li .info_box .logo {
-    height: 27px;
-    width: auto;
+.studio_list li img {
+    width: 500px;
+    height: 228px;
 }
 
-.honeymoon_tab {
+.studio_list .info_box {
+    padding: 12px 20px 10px;
+    
+}
+
+.suit_name {
+    padding-right:10px;
+}
+
+.studio_list .info_box table .suit_info {
+    display: inline-block;
+    width: 250px;
+    height: 70px;
+    overflow-wrap: break-word; /* 긴 단어에서 줄 바꿈 */
+    word-wrap: break-word; /* 구식이지만 여전히 사용됨 */
+    white-space: normal; /* 기본 줄 바꿈 설정 */
+    padding: 10px; /* 여백 추가 */
+    overflow: hidden;
+    color: #2e2e2e; 
+}
+
+.coma_tab {
     width: 825px;
     margin: auto;
-    margin-bottom: 20px;
     overflow: hidden;
+    display: flex;
+    list-style: none;
 }
 
-.collection_tab li.m1 {
-    width: 208;
-}
-
-.collection_tab li.m2 {
-    width: 208;
-}
-
-.collection_tab li.m3 {
-    width: 208;
-}
-
-.collection_tab li.m4 {
-    width: 208;
-}
-
-.collection_tab li.m2 a {
-    background-position: -209px 0px;
-}
-
-.collection_tab li.m2.on a {
-    background-position: -209px -50px;
-}
-
-.collection_tab li.m3 a {
-    background-position: -418px 0px;
-}
-
-.collection_tab li.m3.on a {
-    background-position: -418px -50px;
-}
-
-.collection_tab li.m4 a {
-    background-position: -627px 0px;
-}
-
-.collection_tab li.m4.on a {
-    background-position: -627px -50px;
-}
-
-.honeymoon_tab li a {
-    height: 47px;
-    display: block;
-    /* background: url(/img) 0 0 no-repeat; */
-}
-
-.honeymoon_tab li.m1 {
+.coma_tab li.m1 {
     width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    margin:1px;
 }
 
-.honeymoon_tab li.m2 {
+.coma_tab li.m2 {
     width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    margin:1px;
 }
 
-.honeymoon_tab li.m3 {
+.coma_tab li.m3 {
     width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    margin:1px;
 }
 
-.honeymoon_tab li.m4 {
+.coma_tab li.m4 {
     width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    margin:1px;
 }
 
-.honeymoon_tab li.m5 {
-    width: 165px;
-}
-
-.honeymoon_tab li.m2 a {
-    background-position: -168px 0px;
-}
-
-.honeymoon_tab li.m3 a {
-    background-position: -337px 0px;
-}
-
-.honeymoon_tab li.m4 a {
-    background-position: -506px 0px;
-}
-
-.honeymoon_tab li.m5 a {
-    background-position: -675px 0px;
-}
-
-.honeymoon_tab li.m2.on a {
-    background-position: -168px -50px;
-}
-
-.honeymoon_tab li.m2.on a {
-    background-position: -168px -50px;
-}
-
-.honeymoon_tab li.m3.on a {
-    background-position: -337px -50px;
-}
-
-.honeymoon_tab li.m4.on a {
-    background-position: -506px -50px;
-}
-
-.honeymoon_tab li.m5.on a {
-    background-position: -675px -50px;
+.text {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
 }
