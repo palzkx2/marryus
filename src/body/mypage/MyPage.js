@@ -79,7 +79,7 @@ const MyPage = () => {
                         </div>    
                         </Link>
 
-                        <Link to='/myAccount'>
+                        <Link to='/updateUser'>
                         <div className='item'>
                             <MdManageAccounts className='bigIcon' />
                             <p className='sub' style={{paddingLeft:'51px'}}>개인 정보 관리</p>
