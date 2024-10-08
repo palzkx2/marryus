@@ -4,11 +4,20 @@
     flex-direction: row;  
     margin: 0px 50px 0px 50px;
 }
+
+.functionBySection:hover{
+    background-color: gainsboro;
+}
+
 .functionBySection{
+
+    width: 180px;
+    height: 130px;
+
     flex-grow: 1;
     flex-shrink: 1;
 
-    margin: 10px;
+    margin: 10px 5px 0px 3px;
     padding: 20px;
 
     border-radius: 2%;

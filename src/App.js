@@ -9,6 +9,16 @@ import Login from "./login/Login";
 import SignUp from "./login/SignUp";
 import Join from "./login/Join";
 import Travel from "./travel/Travel";
+import MyPage from "./body/mypage/MyPage";
+import ExitSite from "./body/mypage/ExitSite";
+import MyAccount from "./body/mypage/MyAccount";
+import MyQna from "./body/mypage/MyQna";
+import MyReivew from "./body/mypage/MyReivew";
+import MyWedding from "./body/mypage/MyWedding";
+import MyBookList from "./body/mypage/MyBookList";
+import MyOrder from "./body/mypage/MyOrder";
+import MyBookmark from "./body/mypage/MyBookmark";
+import MyCart from "./body/mypage/MyCart";
 
 function App() {
   return (
@@ -23,6 +33,16 @@ function App() {
         <Route path={['/signup']}><SignUp/></Route>
         <Route path={['/join']}><Join/></Route>
         <Route path={['/travel']}><Travel/></Route>
+        <Route path={['/myPage']}><MyPage/></Route>
+        <Route path={['/exitSite']}><ExitSite/></Route>
+        <Route path={['/myAccount']}><MyAccount/></Route>
+        <Route path={['/myQna']}><MyQna/></Route>
+        <Route path={['/myReview']}><MyReivew/></Route>
+        <Route path={['/myWedding']}><MyWedding/></Route>
+        <Route path={['/myBookList']}><MyBookList/></Route>
+        <Route path={['/myOrder']}><MyOrder/></Route>
+        <Route path={['/myBookmark']}><MyBookmark/></Route>
+        <Route path={['/myCart']}><MyCart/></Route>
       </Switch>
       <Footer/>
     </div>
