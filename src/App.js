@@ -20,6 +20,7 @@ import MyOrder from "./body/mypage/MyOrder";
 import MyBookmark from "./body/mypage/MyBookmark";
 import MyCart from "./body/mypage/MyCart";
 import UpdateUser from "./login/UpdateUser";
+import SdmArticle from "./sdmArticle/SdmArticle";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path={['/myCart']}><MyCart/></Route>
         <Route path={['/updateUser']}><UpdateUser/></Route>
       </Switch>
+      <SdmArticle/>
       <Footer/>
     </div>
   );
