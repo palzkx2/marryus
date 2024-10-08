@@ -55,7 +55,7 @@ const NavBar = () => {
                             스드메
                         </p>
                     </Link>
-                    <Link to='/'>
+                    <Link to='/weddingItem'>
                         <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                             혼수컬렉션
                         </p>
@@ -85,7 +85,7 @@ const NavBar = () => {
                     <Link to='/'><p>전체메뉴</p></Link>
                     <Link to='/weddingHall'><p>웨딩홀</p></Link>
                     <Link to='/sdm'><p>스드메</p></Link>
-                    <Link to='/'><p>혼수컬렉션</p></Link>
+                    <Link to='/weddingItem'><p>혼수컬렉션</p></Link>
                     <Link to='/'><p>신혼여행지</p></Link>
                 </div>
                 <div style={{margin:'0 440px'}}></div>

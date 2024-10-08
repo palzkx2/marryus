@@ -17,6 +17,7 @@ function App() {
         <Route path={['/','/main']} exact><Main/></Route>
         <Route path={['/sdm']}><SdmBoard/></Route>
         <Route path={['/weddingHall']}><WeddingHall/></Route>
+        <Route path={['/weddingItem']}><Coma/></Route>
         <Route path={['/login']}><Login/></Route>
         <Route path={['/signup']}><SignUp/></Route>
         <Route path={['/join']}><Join/></Route>
