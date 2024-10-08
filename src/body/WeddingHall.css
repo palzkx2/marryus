@@ -90,6 +90,28 @@ a{
     font-size: 12px;
     white-space: nowrap;
 }
+details {
+    overflow: hidden;
+  }
+  
+  details[open] p {
+    max-height: 300px; /* 콘텐츠 높이를 충분히 설정 */
+    transition: max-height 0.5s ease-in-out; /* 트랜지션을 항상 적용 */
+  }
+  
+  details:not([open]) p {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+  }
+.scoption{
+    width: 218px;
+    background-color: white;
+}
+.arrowIcon{
+    width: 18px;
+    height: 18px;
+    color: gainsboro;
+}
 .letCategory:hover{
     background-color: white;
     cursor: pointer;
@@ -121,6 +143,8 @@ a{
 .allProduct{
     margin: 10px;
     white-space: nowrap;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -147,3 +171,20 @@ a{
 .absolute {
     position: absolute;
 }
+
+.itemContainer{
+    background-color: rgba(221, 210, 220, 0.322);
+    margin: 10px;
+    border-radius: 3%;
+    width: 300px;
+    height: 540px;
+    position: relative;
+}
+
+.LocationSearchSticky{
+    /* style={{marginTop:'20px',position:'sticky',top:'130px'} */
+    margin-top: 20px;
+    position: sticky;
+    top: 130px;
+}
+

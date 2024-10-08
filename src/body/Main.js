@@ -67,7 +67,7 @@ const Main = () => {
                 loop // 반복 재생 (원하는 경우)
                 muted // 자동 재생 시 소리 끄기                
             >
-                <source src={`${process.env.PUBLIC_URL}/p_videos/mainBarVideo1.mp4`} type="video/mp4" />
+                <source src={`${process.env.PUBLIC_URL}/p_videos/mBar.mp4`} type="video/mp4" />
                 죄송합니다. 브라우저가 비디오 태그를 지원하지 않습니다.
             </video>
             </div>

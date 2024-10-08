@@ -10,8 +10,8 @@ function App() {
       <NavBar/>
       <Main/>
       <Footer/>
-      {/* <SdmBoard/> */}
-      {/* <WeddingHall/> */}
+      <SdmBoard/>
+      <WeddingHall/>
     </div>
   );
 }
