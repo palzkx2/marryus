@@ -1,4 +1,5 @@
 import Main from "./body/Main";
+import MyPage from "./body/mypage/MyPage";
 import NavBar from "./body/NavBar";
 import WeddingHall from "./body/WeddingHall";
 import Footer from "./footer/Footer";
@@ -8,10 +9,11 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <Main/>
+      <MyPage/>
       <Footer/>
-      <SdmBoard/>
-      <WeddingHall/>
+      {/* <WeddingHall/> */}
+      {/* <Main/>
+      <SdmBoard/> */}
     </div>
   );
 }
