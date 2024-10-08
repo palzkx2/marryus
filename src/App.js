@@ -19,6 +19,7 @@ import MyBookList from "./body/mypage/MyBookList";
 import MyOrder from "./body/mypage/MyOrder";
 import MyBookmark from "./body/mypage/MyBookmark";
 import MyCart from "./body/mypage/MyCart";
+import UpdateUser from "./login/UpdateUser";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path={['/myOrder']}><MyOrder/></Route>
         <Route path={['/myBookmark']}><MyBookmark/></Route>
         <Route path={['/myCart']}><MyCart/></Route>
+        <Route path={['/updateUser']}><UpdateUser/></Route>
       </Switch>
       <Footer/>
     </div>

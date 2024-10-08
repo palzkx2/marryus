@@ -7,7 +7,7 @@ const Login = () => {
         <div>
             <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
                 <div style={{width:'1400px', height:'350px', display:'flex', justifyContent:'center', alignContent:'center', backgroundImage:`url(${loginImg})`, backgroundSize:'cover', backgroundPosition:`center calc(100% - -130px)`}}>
-                    <p style={{marginTop:'140px', fontSize:'32pt', fontWeight:'bold', color:'pink', textShadow:'2px 2px 2px rgba(0,0,0, 0.5)'}}>♥ 로그인 ♥</p>
+                    <p style={{marginTop:'140px', fontSize:'32pt', fontWeight:'bold', color:'#F8D3D3', textShadow:'2px 2px 2px rgba(0,0,0, 0.5)'}}>♥ 로그인 ♥</p>
                 </div>
             </div>
             <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
