@@ -21,12 +21,12 @@ import MyBookmark from "./body/mypage/MyBookmark";
 import MyCart from "./body/mypage/MyCart";
 import UpdateUser from "./login/UpdateUser";
 import SdmArticle from "./sdmArticle/SdmArticle";
-import Cart from './cart/Cart'
+// import Cart from './cart/Cart'
 function App() {
   return (
     <div>      
       <NavBar/> 
-       {/* <Switch>
+      <Switch>
         <Route path={['/','/main']} exact><Main/></Route>
         <Route path={['/sdm']}><SdmBoard/></Route>
         <Route path={['/weddingHall']}><WeddingHall/></Route>
@@ -49,11 +49,7 @@ function App() {
         <Route path={['/sdmArticle']}><SdmArticle/></Route>
       </Switch>
       <Footer/>
-      </Switch>  */}
-      {/* <SdmArticle/> */}
-       {/* <MyCart/>  */}
-       <Cart/>
-      {/* <Footer/> */}
+      {/* <Cart/> */}
     </div>
   );
 }
