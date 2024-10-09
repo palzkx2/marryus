@@ -21,16 +21,15 @@
     display: flex;
     width: 220px;
     margin: 45px;
+    z-index: 1;
 }
 
 .imgDiv{
     width: 250px;
     height: 300px;
     background: gray;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 15px;
+    z-index: 2;
 }
 
 .imgDiv img {

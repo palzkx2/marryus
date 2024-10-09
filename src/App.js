@@ -46,8 +46,8 @@ function App() {
         <Route path={['/myBookmark']}><MyBookmark/></Route>
         <Route path={['/myCart']}><MyCart/></Route>
         <Route path={['/updateUser']}><UpdateUser/></Route>
+        <Route path={['/sdmArticle']}><SdmArticle/></Route>
       </Switch>
-      {/* <SdmArticle/> */}
       <Footer/>
     </div>
   );

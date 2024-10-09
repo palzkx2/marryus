@@ -1,5 +1,6 @@
 import React from 'react';
 import sdmImg from '../s_images/sdmImage.jpg'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SdmArticle = () => {
     return (
@@ -40,9 +41,34 @@ const SdmArticle = () => {
                 </div>
             </div>
             <div style={{display:'flex', justifyContent:'center', alignContent:'center', marginTop:'-160px'}}>
-                <div style={{width:'1260px', height:'500px'}}>
-                    <div style={{background:'green', width:'900px', height:'100px'}}>
-
+                <div style={{width:'1260px', height:'160px', display:'flex', justifyContent:'start', alignContent:'center'}}>
+                    <div style={{width:'900px', height:'120px', display:'flex', justifyContent:'center', alignContent:'center'}}>
+                        <div style={{margin:'0px 20px', width:'750px', height:'120px', display:'flex', justifyContent:'space-between', alignContent:'center'}}>
+                            <div style={{background:'red', width:'120px', height:'120px'}}>
+                                <img src={sdmImg} alt='' width={120} height={120}/>
+                            </div>
+                            <div style={{background:'red', width:'120px', height:'120px'}}>
+                                <img src={sdmImg} alt='' width={120} height={120}/>
+                            </div>
+                            <div style={{background:'red', width:'120px', height:'120px'}}>
+                                <img src={sdmImg} alt='' width={120} height={120}/>
+                            </div>
+                            <div style={{background:'red', width:'120px', height:'120px'}}>
+                                <img src={sdmImg} alt='' width={120} height={120}/>
+                            </div>
+                            <div style={{background:'red', width:'120px', height:'120px'}}>
+                            <img src={sdmImg} alt='' width={120} height={120}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
+                <div style={{width:'1260px', height:'140px',display:'flex', justifyContent:'center', alignContent:'center'}}>
+                    <div style={{marginTop:'20px'}}>
+                        <Link to='/sdm'>
+                            <button style={{fontSize:'22pt', padding:'20px 70px', background:'#32CD32', border:'none', color:'white', cursor:'pointer'}}>목록</button>
+                        </Link>
                     </div>
                 </div>
             </div>

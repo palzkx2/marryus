@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './sdmBoard.css';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SdmBoard = () => {
     const sdmInfo = [
@@ -120,7 +121,6 @@ const SdmBoard = () => {
                     <button className='btnStyle1' style={{ marginLeft: '565px' }}>낮은가격순</button>
                     <button className='btnStyle1'>높은가격순</button>
                 </div>
-
                 <div style={{ marginLeft: '23%' }}>
                     {
                         // data를 4개씩 나누기 위한 배열 생성
@@ -130,11 +130,21 @@ const SdmBoard = () => {
                                     data.slice(rowIndex * 4, rowIndex * 4 + 4).map((item, index) => (
                                         <div key={index} className='imgBoard' style={{ width: '220px', margin: '0 26px' }}>
                                             <div className='imgDiv'>
-                                                <img src='' alt='' width={220} height={200} />
-                                                <strong>{item.name}</strong>
-                                                <p>{item.subName}</p>
-                                                <p>{item.like}</p>
-                                                <p>{item.tag}</p>
+                                                <Link to='/sdmArticle'>
+                                                    <img src='' alt='' width={220} height={200} />
+                                                </Link>
+                                                <Link to='/sdmArticle'>
+                                                    <strong>{item.name}</strong>
+                                                </Link>
+                                                <Link to='/sdmArticle'>
+                                                    <p>{item.subName}</p>
+                                                </Link>
+                                                <Link to='/sdmArticle'>
+                                                    <p>{item.like}</p>
+                                                </Link>
+                                                <Link to='/sdmArticle'>
+                                                    <p>{item.tag}</p>
+                                                </Link>
                                             </div>
                                         </div>
                                     ))
