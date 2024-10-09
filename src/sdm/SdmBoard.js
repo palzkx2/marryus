@@ -130,19 +130,19 @@ const SdmBoard = () => {
                                     data.slice(rowIndex * 4, rowIndex * 4 + 4).map((item, index) => (
                                         <div key={index} className='imgBoard' style={{ width: '220px', margin: '0 26px' }}>
                                             <div className='imgDiv'>
-                                                <Link to='/sdmArticle'>
+                                                <Link to='/sdmArticle' style={{color:'black'}}>
                                                     <img src='' alt='' width={220} height={200} />
                                                 </Link>
-                                                <Link to='/sdmArticle'>
+                                                <Link to='/sdmArticle' style={{color:'black'}}>
                                                     <strong>{item.name}</strong>
                                                 </Link>
-                                                <Link to='/sdmArticle'>
+                                                <Link to='/sdmArticle' style={{color:'black'}}>
                                                     <p>{item.subName}</p>
                                                 </Link>
-                                                <Link to='/sdmArticle'>
+                                                <Link to='/sdmArticle' style={{color:'black'}}>
                                                     <p>{item.like}</p>
                                                 </Link>
-                                                <Link to='/sdmArticle'>
+                                                <Link to='/sdmArticle' style={{color:'black'}}>
                                                     <p>{item.tag}</p>
                                                 </Link>
                                             </div>

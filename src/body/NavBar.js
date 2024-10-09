@@ -75,7 +75,7 @@ const NavBar = () => {
                     <Link to='/login'><p>로그인</p></Link>
                     <Link to='/signup'><p style={{marginLeft:'50px'}}>회원가입</p></Link>
                     <Link to='/myPage'><p style={{marginLeft:'50px'}}>마이페이지</p></Link>
-                    <Link to='/'><strong style={{margin:'0 300px', fontSize:'36pt', color:'black'}}>Marry Us</strong></Link>
+                    <strong style={{margin:'0 300px', fontSize:'36pt', color:'black'}}><Link to='/' style={{color:'black'}}>Marry Us</Link></strong>
                     <input type='text' placeholder='검색 할 내용을 입력하세요.' style={{height:'20px', margin:'16px 0', width:'292px', fontSize:'10pt'}}/>
                 </div>
             </div>
