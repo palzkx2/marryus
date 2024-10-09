@@ -19,7 +19,7 @@ const Travel = () => {
                 <h2>신부야 여행가자</h2>
                 <div
                     style={{
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/p_travel/R.jpg)`,
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/p_travel/travelweb2.jpg)`,
                         backgroundSize: 'cover',
                         width: '1200px',
                         height: '500px',
