@@ -5,6 +5,7 @@ import { BsSearchHeart } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { TbShoppingCartHeart } from "react-icons/tb";
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import marryUsLogo from '../s_images/marryUsLogo.png';
 
 const NavBar = () => {
 
