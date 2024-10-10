@@ -3,7 +3,7 @@
 
     background-color: rgb(254, 245, 245);
     width: 1250px;
-    height: auto;
+    height: 800px;
     margin:0 auto;
 }
 
@@ -144,14 +144,18 @@
     border-radius: 5px; /* Rounded corners */
     margin: 10px 0;
     text-align: center;
+    margin-top: 32px;
+    transition: all 0.4s ease;
 }
 
-
+.cart-order .codbtn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
 
 .cart-order .codbtn2 {
     width: 200px; /* Set a fixed width */
     height: 50px; 
-    background-color: green;
+    background-color: rgb(0, 180, 0);
     color: white;
     border: none;
     padding: 5px 20px; /* Top and bottom, Left and right padding */
@@ -160,7 +164,13 @@
     border-radius: 5px; /* Rounded corners */
     margin: 10px 0;
     text-align: center;
+    transition: all 0.4s ease;
 }
+
+.cart-order .codbtn2:hover {
+    background: rgba(0, 90, 0, 0.8);
+}
+
 .cart-custom-checkbox {
     display: inline-block;
     position: relative;

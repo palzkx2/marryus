@@ -21,7 +21,7 @@ import MyBookmark from "./body/mypage/MyBookmark";
 import MyCart from "./body/mypage/MyCart";
 import UpdateUser from "./login/UpdateUser";
 import SdmArticle from "./sdmArticle/SdmArticle";
-// import Cart from './cart/Cart'
+import Cart from './cart/Cart'
 import WeddingHallArticle from "./body/WeddingHallArticle";
 
 function App() {
@@ -50,9 +50,9 @@ function App() {
         <Route path={['/updateUser']}><UpdateUser/></Route>
         <Route path={['/sdmArticle']}><SdmArticle/></Route>
         <Route path={['/wdArticle']}><WeddingHallArticle/></Route>
+        <Route path={['/cart']}><Cart/></Route>
       </Switch>
       <Footer/>
-      {/* <Cart/> */}
     </div>
   );
 }

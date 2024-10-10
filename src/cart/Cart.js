@@ -4,16 +4,16 @@ import {  TbShoppingCartHeart } from 'react-icons/tb';
 const Cart = () => {
     return (
         
-<div className='cart'>
-        <div> 
-        <div>   
-                    <div className='cart-flex-container'>
-                        <h2 style={{marginTop:'1em',
-                            marginLeft:'1em',
-                            
+    <div className='cart'>
+        <div>
+            <div>   
+                <div className='cart-flex-container'>
+                    <h2 style={{marginTop:'1em',
+                        marginLeft:'1em',
+                        
 
-                        }} className='cart-Name'><TbShoppingCartHeart className='icon1'/> 장바구니</h2>
-                    </div>
+                    }} className='cart-Name'><TbShoppingCartHeart className='icon1'/> 장바구니</h2>
+                </div>
 
                 <div className='cart-flex-container'>
                     <table className='cart-table'>
@@ -107,9 +107,6 @@ const Cart = () => {
                                 <thead>
                                     <tr>
                                         <th rowSpan={2}>총 주문상품</th>
-                                            
-                                        
-                                    
                                     </tr>    
                                 </thead>
                                 <tfoot className='cart-flex-item'>
@@ -145,9 +142,9 @@ const Cart = () => {
                     </div>
 
                 </div>
-        </div>        
+            </div>        
+        </div>
     </div>
-</div>
     );
 };
 

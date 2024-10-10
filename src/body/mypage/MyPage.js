@@ -24,7 +24,7 @@ const MyPage = () => {
                     
                     <div className='bContainer' >
 
-                        <Link to='/myCart'>
+                        <Link to='/cart'>
                         <div className='item'>
                             <TbShoppingCartHeart className='bigIcon' />
                             <p className='sub' style={{paddingLeft:'80px'}}>장바구니</p>
