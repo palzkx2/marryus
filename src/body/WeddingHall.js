@@ -8,6 +8,7 @@ import proData from './proData';
 import WeddingHallItem from './WeddingHallItem';
 import { TiArrowDownOutline, TiArrowUpOutline } from 'react-icons/ti';
 import { RxDoubleArrowDown, RxDoubleArrowUp } from 'react-icons/rx';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -541,9 +542,11 @@ const WeddingHall = () => {
                 <div style={{all:'initial',display:'flex',flexWrap:'wrap',overflow:'auto',backgroundColor:'whitesmoke',alignContent:'center',marginTop:'10px',margin:'10px',padding:'10px'}}>
                     {
                         data.map((item,index)=>
-
+                            
                             <div className='itemContainer'>
-                                <WeddingHallItem key={index} item={item}/>                             
+                                <Link to='/wdArticle' className='toArticle'>
+                                    <WeddingHallItem key={index} item={item}/>                             
+                                </Link>
                             </div>
                     )
                 }
