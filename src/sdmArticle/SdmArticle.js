@@ -1,8 +1,96 @@
 import React from 'react';
 import sdmImg from '../s_images/sdmImage.jpg'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import proData from '../body/proData';
 
 const SdmArticle = () => {
+
+    const sdmInfo = [
+        {
+            name: "아우라스튜디오",
+            subName: "서울특별시 강남구",
+            like: "하트5개",
+            tag: "배경위주 엔틱함 옥상씬",
+            color: "green"
+        },
+        {
+            name: "아우라스튜디오1",
+            subName: "서울특별시 강남구1",
+            like: "하트5개1",
+            tag: "배경위주 엔틱함 옥상씬1",
+            color: "green1"
+        },
+        {
+            name: "아우라스튜디오2",
+            subName: "서울특별시 강남구2",
+            like: "하트5개2",
+            tag: "배경위주 엔틱함 옥상씬2",
+            color: "green2"
+        },
+        {
+            name: "아우라스튜디오3",
+            subName: "서울특별시 강남구3",
+            like: "하트5개3",
+            tag: "배경위주 엔틱함 옥상씬3",
+            color: "green3"
+        },
+        {
+            name: "아우라스튜디오4",
+            subName: "서울특별시 강남구4",
+            like: "하트5개4",
+            tag: "배경위주 엔틱함 옥상씬4",
+            color: "green4"
+        },
+        {
+            name: "아우라스튜디오5",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        },
+        {
+            name: "아우라스튜디오6",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        },
+        {
+            name: "아우라스튜디오7",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        },
+        {
+            name: "아우라스튜디오8",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        },
+        {
+            name: "아우라스튜디오9",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        },
+        {
+            name: "아우라스튜디오10",
+            subName: "서울특별시 강남구5",
+            like: "하트5개5",
+            tag: "배경위주 엔틱함 옥상씬5",
+            color: "green5"
+        }
+    ];
+
+    const {sdmName} = useParams()
+
+
+    const thisPro = sdmInfo.find(item=>item.name===sdmName)
+
+
     return (
         <div>
             <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
@@ -28,6 +116,12 @@ const SdmArticle = () => {
                             <div style={{marginLeft:'20px'}}>
                                 <p style={{fontSize:'14pt', marginTop:'15px'}}>- 상세정보</p>
                                 <p style={{color:'gray'}}>아름다운 사랑의 감정을 느낄 수 있습니다.</p>
+                                <p style={{color:'gray'}}>{thisPro.name}</p>
+                                <p style={{color:'gray'}}>{thisPro.subName}</p>
+                                <p style={{color:'gray'}}>{thisPro.like}</p>
+                                <p style={{color:'gray'}}>{thisPro.tag}</p>
+                                <p style={{color:'gray'}}>{thisPro.color}</p>
+                                
                             </div>
                         </div>
 

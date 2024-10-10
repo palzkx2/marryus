@@ -6,7 +6,7 @@
 }
 
 .functionBySection:hover{
-    background-color: gainsboro;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .functionBySection{
@@ -29,10 +29,11 @@
     font-weight: bold;
     color: #353535;
     white-space: nowrap;
+    transition: all 0.4s ease;
     .sub{
         white-space: nowrap;
         font-size: 13px;
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
         padding: 5px;
         font-weight: normal;
     }
@@ -42,7 +43,7 @@
     width: 70px;
     height: 70px;
     background-color: rgba(215, 230, 233, 0.267);
-    color: rgb(231, 103, 178);
+    color: rgb(180, 0, 0);
 }
 a{
     text-decoration: none;
@@ -55,9 +56,9 @@ a{
 .header{
     margin:20px;
     padding-top: 20px;
-    border-color:  rgb(231, 103, 178);
+    border-color:  rgb(76, 126, 20);
     border-top: 1px solid;
-    color:rgb(231, 103, 178);
+    color:rgb(76, 126, 20);
     border-width: 3px;
     width: 218px;
 }
@@ -65,7 +66,7 @@ a{
     margin: auto;
     padding-left: 60px;
     font-weight: bold;
-    color: rgb(231, 103, 178);
+    color: rgb(48, 82, 10);
     font-size: 22px;
 }
 .searchBox-container{
@@ -208,8 +209,8 @@ details {
 }
 .mainContainere{
     width: 1400px;
-    height: 2000px;
-    margin: 0 10px 30px 10px;
+    height: 1327px;
+    margin: 0 10px 0px 10px;
     padding: 0px 0;
     background-color: rgba(220, 220, 220, 0.205);
 }
@@ -217,23 +218,27 @@ details {
     width: 98px;
     height: 98px;
     padding: 1px;
-    border-radius: 2%;
 }
 .artiImgConBox{
     margin: 10px 10px 10px 10px;
     padding: 15px 0px 10px 30px;
-    border: 1px solid blue;
 }
 .conBox{
     margin: 10px;
     padding: 20px 20px 17px 17px;
     display: flex;
 }
-.conBox .byeBtn{
+.byeBtnaLoc{
+    display: flex;
+    position: absolute;
+    margin: -114px 10px 10px 680px;
+    padding: 10px 11px 13px 14px;
+}
+.byeBtna{
     width: 130px;
     height: 30px;
     border: 1px solid pink;
-    padding: 15px 15px 19px 17px;
+    padding: 15px;
     margin: 20px;
     font-size: 30px;
     background-color: rgba(241, 99, 184, 0.829);
@@ -242,11 +247,22 @@ details {
     font-weight: bold;
 
 }
-.artiSub{
+.artiSubCon{
+    margin: 11px 10px 10px 25px;;
+    padding: 30px 172px 2px 35px;
+}
+.artiSubCon .artiSub{
     width: 100px;
     height: 100px;
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+}
+.artiSubCon .artiSc{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
     margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid red;
+    padding: 10px;
+    margin:10px
 }

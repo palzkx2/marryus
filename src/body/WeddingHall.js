@@ -8,7 +8,10 @@ import proData from './proData';
 import WeddingHallItem from './WeddingHallItem';
 import { TiArrowDownOutline, TiArrowUpOutline } from 'react-icons/ti';
 import { RxDoubleArrowDown, RxDoubleArrowUp } from 'react-icons/rx';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import WeddingHallArticle from './WeddingHallArticle';
+import Bar from './mypage/Bar';
+import loginImg from '../s_images/weddingHall/wdHallBar1.jpg'
 
 
 
@@ -291,23 +294,27 @@ const WeddingHall = () => {
 
 
     return (
-        <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
-
+        <div style={{justifyContent:'center', alignContent:'center'}}>
+             <div style={{margin:'auto',width:'1400px', height:'350px', display:'flex', justifyContent:'center', alignContent:'center', backgroundImage:`url(${loginImg})`, backgroundSize:'cover', backgroundPosition:`center calc(100% - -130px)`}}>
+             </div>   
+        <div className='mainContainer' style={{margin:'auto',display:'flex', justifyContent:'center', alignContent:'center'}}>
+            
             {/* 왼쪽 카테고리,검색 */}
-            <div className='header'>
+            <div className='header' >
                 {/* 웨딩홀 */}
+                <div className='LocationSearchSticky'>
                 <div>
                     <div className='headerSubject'>웨딩홀</div>
                     <div className='searchBox-container'>
                         <input className='searchBox' type='text' placeholder='웨딩홀 및 태그를 검색해 보세요'/>
                         <div className='searchBoxIcon'>
                             <a href='#'>
-                                <BsSearchHeart />
+                                <BsSearchHeart style={{color:'gray'}}/>
                             </a>
                         </div>
                     </div>
                     </div>
-                    <div className='letCategory' style={{borderTop:'3px solid  rgb(231, 103, 178)'}}>
+                    <div className='letCategory' style={{borderTop:'3px solid  rgb(76, 126, 20)'}}>
                         전체보기
                         <div className='gt' style={{paddingLeft:'137px'}}>&gt;</div>
                     </div>
@@ -331,13 +338,13 @@ const WeddingHall = () => {
                         야외 웨딩홀
                         <div className='gt' style={{paddingLeft:'121px'}}>&gt;</div>
                     </div>
+                    
                     {/* 웨딩홀 end*/}
 
                   {/* 지역검색 */}
-                  <div className='LocationSearchSticky'>
-                        <div className='headerSubject' style={{marginBottom:'10px'}}>지역 검색</div>
+                    <div className='headerSubject' style={{marginBottom:'10px',marginTop:'30px'}}>지역 검색</div>
 
-                        <details open={isOpenRegion}>
+                        <details open={isOpenRegion} style={{borderTop:'3px solid  rgb(76, 126, 20)'}}>
                             <summary className='letCategory' onClick={toggleRegion}>
                                 지역검색
                                 <p style={{marginRight:'125px'}}></p>
@@ -458,13 +465,13 @@ const WeddingHall = () => {
 
                 {/* 헤드라인 */}
                 <div className='header' style={{width:'1000px'}}>
-
+                            
                 {/* 기능별 (지도,섭외,비교) 카테고리 */}
                 <div className='functionByContainer' >
                     {/* 홀 지도 */}
                     <a href='#'>
                         <div className='functionBySection'>
-                            <TbMapPinHeart  className='functionByIcon'/>
+                            <TbMapPinHeart  className='functionByIcon' />
                             홀 지도
                             <div className='sub'>
                                 웨딩홀, 지도로 한눈에!
@@ -475,7 +482,7 @@ const WeddingHall = () => {
                     {/* 홀 섭외 */}
                     <a href='#'>
                         <div className='functionBySection'>
-                            <GiBookmarklet className='functionByIcon'/>
+                            <GiBookmarklet className='functionByIcon' />
                             홀 섭외
                             <div className='sub'>
                                 웨딩홀 섭외리스트 신청
@@ -486,7 +493,7 @@ const WeddingHall = () => {
                     {/* 홀 vs 홀 */}
                     <a href='#'>
                     <div className='functionBySection'>
-                        <GrCompare className='functionByIcon'/>
+                        <GrCompare className='functionByIcon' />
                         홀 vs 홀
                         <div className='sub'>
                             홀 vs 홀
@@ -497,7 +504,7 @@ const WeddingHall = () => {
                     {/*  AI 기반 테마 및 스타일 추천 */}
                     <a href='#'>
                         <div className='functionBySection'>
-                            <TbHeartQuestion className='functionByIcon'/>
+                            <TbHeartQuestion className='functionByIcon' />
                             나만의 웨딩홀
                             <div className='sub'>
                                 AI 기반 테마 및 스타일 추천
@@ -544,7 +551,7 @@ const WeddingHall = () => {
                         data.map((item,index)=>
                             
                             <div className='itemContainer'>
-                                <Link to='/wdArticle' className='toArticle'>
+                                <Link to={`/wdArticle/${item.name}`} className='toArticle'>
                                     <WeddingHallItem key={index} item={item}/>                             
                                 </Link>
                             </div>
@@ -554,6 +561,7 @@ const WeddingHall = () => {
             </div>
 
 
+        </div>
         </div>
     );
 };
