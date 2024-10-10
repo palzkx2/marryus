@@ -66,7 +66,9 @@ const NavBar = () => {
                         </p>
                     </Link>
                 </div>
-                <FaUserTie className='icon'/>
+                <Link to='/myPage' style={{color:'white'}}>
+                    <FaUserTie className='icon'/>
+                </Link>
                 <Link to='/cart' style={{color:'white'}}>
                     <TbShoppingCartHeart className='icon' style={{marginLeft:'20px'}}/>
                 </Link>
@@ -91,7 +93,7 @@ const NavBar = () => {
                     <Link to='/travel'><p>신혼여행지</p></Link>
                 </div>
                 <div style={{margin:'0 440px'}}></div>
-                <div style={{display:'flex', flexDirection:'row'}}>
+                <div className='category' style={{display:'flex', flexDirection:'row'}}>
                     <Link to='/main' style={{color:'black'}}>
                         <p>홈으로</p>
                     </Link>
