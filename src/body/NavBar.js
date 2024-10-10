@@ -5,7 +5,6 @@ import { BsSearchHeart } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { TbShoppingCartHeart } from "react-icons/tb";
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import marryUsLogo from '../s_images/marryUsLogo.png';
 
 const NavBar = () => {
 
@@ -68,7 +67,9 @@ const NavBar = () => {
                     </Link>
                 </div>
                 <FaUserTie className='icon'/>
-                <TbShoppingCartHeart className='icon' style={{marginLeft:'20px'}}/>
+                <Link to='/cart' style={{color:'white'}}>
+                    <TbShoppingCartHeart className='icon' style={{marginLeft:'20px'}}/>
+                </Link>
             </nav>
 
             <div style={{justifyContent:'center', alignContent:'center', display:'flex', margin:'30px 0'}}>
@@ -91,8 +92,12 @@ const NavBar = () => {
                 </div>
                 <div style={{margin:'0 440px'}}></div>
                 <div style={{display:'flex', flexDirection:'row'}}>
-                    <p>홈으로</p>
-                    <p style={{paddingLeft:'20px', marginRight:'21px'}}>고객센터</p>
+                    <Link to='/main' style={{color:'black'}}>
+                        <p>홈으로</p>
+                    </Link>
+                    <Link to='/serviceCenter' style={{color:'black'}}>
+                        <p style={{paddingLeft:'20px', marginRight:'21px'}}>고객센터</p>
+                    </Link>
                 </div>
             </div>
         </div>

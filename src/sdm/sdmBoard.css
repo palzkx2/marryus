@@ -74,6 +74,7 @@
 .stk{
     position: sticky;
     top: 130px;
+    margin-left: 100px;
 }
 
 .bigCategory{

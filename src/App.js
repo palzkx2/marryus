@@ -23,6 +23,8 @@ import UpdateUser from "./login/UpdateUser";
 import SdmArticle from "./sdmArticle/SdmArticle";
 import Cart from './cart/Cart'
 import WeddingHallArticle from "./body/WeddingHallArticle";
+import FindId from "./login/FindId";
+import ServiceCenter from "./serviceCenter/ServiceCenter";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
         <Route path={['/sdmArticle']}><SdmArticle/></Route>
         <Route path={['/wdArticle']}><WeddingHallArticle/></Route>
         <Route path={['/cart']}><Cart/></Route>
+        <Route path={['/findId']}><FindId/></Route>
+        <Route path={['/serviceCenter']}><ServiceCenter/></Route>
       </Switch>
       <Footer/>
     </div>

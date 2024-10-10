@@ -127,7 +127,7 @@ const Main = () => {
                             windowDimensions.width >= 1340 ? 3 :
                             windowDimensions.width >= 1090 ? 2 : 1
                         }
-                        slidesPerGroup={5}
+                        slidesPerGroup={3}
                         // navigation={true}
                         navigation={{
                             prevEl: '.sw1',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { GiLockedHeart } from "react-icons/gi";
 import loginImg from '../s_images/loginImage.jpg'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Login = () => {
     return (
@@ -26,8 +27,12 @@ const Login = () => {
                             <button style={{width:'70px', height:'70px', borderRadius:'5px', background:'#5DC060', border:'none', cursor:'pointer', fontWeight:'bold'}}>로그인</button>
                         </div>
                         <div style={{marginTop:'250px', position:'absolute', fontWeight:'bold'}}>
-                            <button style={{background:'none', border:'1px solid gray', cursor:'pointer', fontWeight:'bold', padding:'5px'}}>아이디/비밀번호 찾기</button>
-                            <button style={{background:'none', border:'1px solid gray', cursor:'pointer', marginLeft:'7px', fontWeight:'bold', padding:'5px'}}>회원가입</button>
+                            <Link to='/findId'>
+                                <button style={{background:'none', border:'1px solid gray', cursor:'pointer', fontWeight:'bold', padding:'5px'}}>아이디/비밀번호 찾기</button>
+                            </Link>
+                            <Link to='/signup'>
+                                <button style={{background:'none', border:'1px solid gray', cursor:'pointer', marginLeft:'7px', fontWeight:'bold', padding:'5px'}}>회원가입</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './sdmBoard.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import studioImg from '../s_images/studioImage.jpg'
 
 const SdmBoard = () => {
     const sdmInfo = [
@@ -87,6 +88,10 @@ const SdmBoard = () => {
 
     return (
         <div>
+            <div style={{display:'flex', justifyContent:'center', alignContent:'center'}}>
+                <div style={{width:'1400px', height:'350px', display:'flex', justifyContent:'center', alignContent:'center', backgroundImage:`url(${studioImg})`, backgroundSize:'cover', backgroundPosition:`center calc(100% - -130px)`}}>
+                </div>
+            </div>
             <div className='stk'>
                 <div className='bigCategoryInput'>
                     메리어스
@@ -111,17 +116,17 @@ const SdmBoard = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div style={{marginLeft:'100px'}}>
                 <div className='smallCategory'>
                     <button className='btnStyle1'>전체상품</button>
                     <button className='btnStyle1'>인물위주</button>
                     <button className='btnStyle1'>배경위주</button>
                     <button className='btnStyle1'>사랑스러움</button>
 
-                    <button className='btnStyle1' style={{ marginLeft: '565px' }}>낮은가격순</button>
+                    <button className='btnStyle1' style={{ marginLeft: '540px' }}>낮은가격순</button>
                     <button className='btnStyle1'>높은가격순</button>
                 </div>
-                <div style={{ marginLeft: '23%' }}>
+                <div style={{ marginLeft: '21.5%' }}>
                     {
                         // data를 4개씩 나누기 위한 배열 생성
                         Array.from({ length: Math.ceil(data.length / 4) }).map((_, rowIndex) => (
