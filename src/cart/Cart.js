@@ -3,6 +3,7 @@ import './cart.css';
 import { TbShoppingCartHeart } from 'react-icons/tb';
 import cartdata from './cartData';
 import Numeral from 'numeral';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Cart = () => {
 
@@ -98,10 +99,13 @@ const Cart = () => {
                     </div>
 
                     {/**버튼 */}
+                    
                     <div className='cart-order'>
+                        <Link to='./orders'>
                         <div className='codiv'>
                             <button className='codbtn'> 주문하기</button>
                         </div>
+                        </Link>
                         <div className='codiv'>
                             <button className='codbtn2'>네이버페이로 간편구매</button>
                         </div>

@@ -24,6 +24,7 @@ import SdmArticle from "./sdmArticle/SdmArticle";
 import Cart from './cart/Cart'
 import WeddingHallArticle from "./body/WeddingHallArticle";
 import ServiceCenter from "./serviceCenter/ServiceCenter";
+import Payment from "./cart/Payment";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route path={['/sdmArticle/:sdmName']}><SdmArticle/></Route>
         <Route path={['/wdArticle/:itemName']}><WeddingHallArticle/></Route>
         <Route path={['/cart']}><Cart/></Route>
+        <Route path={['/orders']}><Payment/></Route>
         <Route path={['/serviceCenter']}><ServiceCenter/></Route>
       </Switch>
       <Footer/>
