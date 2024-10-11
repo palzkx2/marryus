@@ -72,7 +72,7 @@ const MyPage = () => {
                     </div>
 
                     <div className='bContainer' >
-                        <Link to='/myQna'>
+                        <Link to='/serviceCenter'>
                         <div className='item'>
                             <RiQuestionnaireLine className='bigIcon'/>
                             <p className='sub' style={{paddingLeft:'28px'}}>문의 내역 및 고객지원</p>
